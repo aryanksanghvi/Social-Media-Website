@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href = "logincss.css">
+</head>
+<body>
+    <div class = "logo" id = "logo">
+        <img src="./Images/Logo.png" width="250rem">
+    </div>
+    <div class = "log" id = "log">
+        <h1 class = "s">Login</h1>
+        <br>
+        <input type = "text" placeholder = "User Name">
+        <br>
+        <input type = "password" placeholder="Password">
+        <br>
+        <a href="./home.html"><input type ="button" value="Submit" class = "logbutton" onclick="sv('studentl','none')"></a>
+    </div>
+        <div class = "register" id = "register">
+            <h1 class = "s">Register</h1>
+            <br>
+            <form class = "regdata" id = "regdata">
+                <input type = "text" placeholder = "Name">
+                <br>
+                <input type = "text" placeholder = "Age">
+                <br>
+                <input type = "text" placeholder = "Phone No">
+                <br>
+                <input type = "text" placeholder = "User Name">
+                <br>
+                <input type = "password" placeholder = "Password">
+                <br>
+            </form>
+            <br>
+            <input type="button" value = "Submit" class = "regbutton" onclick = "sv('register','none');sv('log','flex')"></a>
+        </div>
+    <script src = "loginjs.js"></script>
+</body>
+</html>
