@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel = "stylesheet" href = "logincss.css">
+    <link rel="icon" href="Account Favion.png" type="image/icon type">
 </head>
 <body>
+    <div class = "Top" id = "Top">
+        <a href ="/home"><img class = "Home" src="Home.png" width="40px">
+        </a>
+        <a href = "/chat"><img class = "chat" src = "Chat.png" width = "40px">
+        </a>
+        <a href="/posts"><img class = "Post" src = "Posts.png" width = "40px">
+        </a>
+        <a href = "/"><img class = "Account" src="Accounts.png" width="40px">
+        </a>
+        <a href = "/signin"><img class = "Noti" src="login1.png" width="40px">
+        </a>
+      </div>
     <div class = "logo" id = "logo">
-        <img src="./Images/Logo.png" width="250rem">
+        <img src="Logo.png" width="250rem">
     </div>
     <div class = "log" id = "log">
         <h1 class = "s">Login</h1>
         <br>
-        <input type = "text" placeholder = "User Name">
+        <input type = "text" name="username" placeholder = "User Name">
         <br>
-        <input type = "password" placeholder="Password">
+        <input type = "password" name="password" placeholder="Password">
         <br>
-        <a href="./home.html"><input type ="button" value="Submit" class = "logbutton" onclick="sv('studentl','none')"></a>
+        <a href="/home"><input type ="button" value="Submit" class = "logbutton" onclick="sv('studentl','none')"></a>
     </div>
         <div class = "register" id = "register">
             <h1 class = "s">Register</h1>
             <br>
             <form class = "regdata" id = "regdata">
-                <input type = "text" placeholder = "Name">
+                <input type = "text" name="names" placeholder = "Name">
                 <br>
-                <input type = "text" placeholder = "Age">
+                <input type = "text" name="age" placeholder = "Age">
                 <br>
-                <input type = "text" placeholder = "Phone No">
+                <input type = "text" name="phone" placeholder = "Phone No">
                 <br>
-                <input type = "text" placeholder = "User Name">
+                <input type = "text" name="username1" placeholder = "User Name">
                 <br>
-                <input type = "password" placeholder = "Password">
+                <input type = "password" name="password1" placeholder = "Password">
                 <br>
             </form>
             <br>

@@ -33,18 +33,25 @@ app.get('/posts',(req,res)=>{
     res.sendFile(path.join(__dirname+'/views/posts.html'));
 });
 
-app.get('/signup',(req,res)=>{
-    res.sendFile(path.join(__dirname+'/views/signup.html'));
-});
-
 app.get('/signin',(req,res)=>{
-    res.sendFile(path.join(__dirname+'/views/signin.html'));
+    res.sendFile(path.join(__dirname+'/views/login.html'));
 });
 
-app.post('/signup',(req,res)=> {
+// app.get('/signup',(req,res)=>{
+//     res.sendFile(path.join(__dirname+'/views/signup.html'));
+// });
+
+// app.get('/signin',(req,res)=>{
+//     res.sendFile(path.join(__dirname+'/views/signin.html'));
+// });
+
+app.post('/signin',(req,res)=> {
 	const data = {
-		username: req.body.username,
-		password: req.body.password
+        names: req.body.names,
+        age: req.body.age,
+        phone: req.body.phone,
+		username1: req.body.username1,
+		password1: req.body.password1
 	}
 	collection.insertOne([data]);
 	res.redirect('/signin');
@@ -52,7 +59,7 @@ app.post('/signup',(req,res)=> {
 
 app.post('/signin',(req,res)=>{
     collection.listen([data]);
-    if (username==req.body.username1 && password==req.body.password1) {
+    if (username1==req.body.username && password1==req.body.password) {
         res.redirect('/home');
     } else {
         res.send('Incorrect user details');

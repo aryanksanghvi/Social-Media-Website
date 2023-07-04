@@ -12,9 +12,16 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+form{
+    row-gap: 10px;
+    padding: 10px;
+}
+br{
+    padding: 20px;
+}
 .logo{
     position: relative;
-    left: 37rem;
+    left: 40rem;
     
 }
 .log{
@@ -24,6 +31,8 @@ body{
     width: 25rem;
     height: 15rem;
     background-color: rgb(243, 251, 248);
+    padding: 20px;
+    margin-left: 40px;
     border-radius: 10px;
     display: none;
     align-items: center;
@@ -66,6 +75,7 @@ body{
     width: 25rem;
     height: 16.5rem;
     background-color: rgb(243, 251, 248);
+    padding: 60px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -74,4 +84,25 @@ body{
     text-align: center;
     -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Top{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    /* height: 100%; */
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: none;
+}
+
+input{
+    padding: 10px;
 }
