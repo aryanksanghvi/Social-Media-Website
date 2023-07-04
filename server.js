@@ -11,8 +11,11 @@ mongoose.connect("mongodb+srv://gowthamkbaalaji4:myFE2XGslS3puTmf@authentication
 var db = mongoose.connection;
 
 const authentication = new mongoose.Schema({
-	username: String,
-	password: String
+	names: String,
+	age: Number,
+	phone: Number,
+	username1: String,
+	password1: String
 })
 
 const collection = new mongoose.model("Collection1",authentication);
@@ -50,8 +53,8 @@ app.post('/signin',(req,res)=> {
         names: req.body.names,
         age: req.body.age,
         phone: req.body.phone,
-		username1: req.body.username1,
-		password1: req.body.password1
+	username1: req.body.username1,
+	password1: req.body.password1
 	}
 	collection.insertOne([data]);
 	res.redirect('/signin');
